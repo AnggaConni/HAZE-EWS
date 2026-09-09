@@ -37,6 +37,11 @@
 <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/localforage/1.10.0/localforage.min.js"></script>
 
+<!-- PWA Manifest & Icons -->
+<link rel="manifest" href="manifest.json">
+<link rel="apple-touch-icon" href="icon-192.png">
+<link rel="apple-touch-icon" href="icon-512.png">
+
 <style>
   body{font-family:'Plus Jakarta Sans',sans-serif;background-color:#f8fafc;}
   ::-webkit-scrollbar{width:6px;height:6px;}
@@ -2004,6 +2009,17 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 document.addEventListener('DOMContentLoaded',()=>{initMap();loadSettings();loadDb();});
+
+// Registrasi Service Worker untuk PWA
+
+if ('serviceWorker' in navigator) {
+  window.addEventListener('load', () => {
+    navigator.serviceWorker.register('./sw.js')
+      .then(reg => console.log('Service Worker Registered!', reg.scope))
+      .catch(err => console.error('Service Worker Registration Failed!', err));
+  });
+}
+
 </script>
 </body>
 </html>
