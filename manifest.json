@@ -7,6 +7,22 @@
   "background_color": "#0f172a",
   "theme_color": "#c2410c",
   "orientation": "any",
+  "screenshots": [
+    {
+      "src": "screenshot-mobile.png",
+      "sizes": "412x915",
+      "type": "image/png",
+      "form_factor": "narrow",
+      "label": "HazeGuard Mobile Monitoring Dashboard"
+    },
+    {
+      "src": "screenshot-desktop.png",
+      "sizes": "1920x1080",
+      "type": "image/png",
+      "form_factor": "wide",
+      "label": "HazeGuard Analytics & Spatial View"
+    }
+  ],
   "icons": [
     {
       "src": "icon-192.png",
