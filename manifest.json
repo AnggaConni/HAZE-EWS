@@ -1,5 +1,5 @@
 {
-  "name": "HazeGuard EWS | Wildfire Smoke & ARI Warning",
+  "name": "HazeGuard EWS | Wildfire Smoke &amp; ARI Warning",
   "short_name": "HazeGuard",
   "description": "Early Warning System for wildfire smoke, peatland haze and Acute Respiratory Infection (ARI/ISPA) risk.",
   "start_url": "./index.html",
@@ -20,5 +20,16 @@
       "type": "image/png",
       "purpose": "any maskable"
     }
+  ],
+  "id": "hazeguard-ews",
+  "dir": "ltr",
+  "scope": "/",
+  "lang": "en",
+  "categories": [
+    "government",
+    "health",
+    "health &amp; fitness",
+    "medical",
+    "weather"
   ]
 }
