@@ -39,8 +39,8 @@
 
 <!-- PWA Manifest & Icons -->
 <link rel="manifest" href="./manifest.json">
-<link rel="apple-touch-icon" href="icon-192.png">
-<link rel="apple-touch-icon" href="icon-512.png">
+<link rel="apple-touch-icon" href="./icon-192.png">
+<link rel="apple-touch-icon" href="./icon-512.png">
 
 <style>
   body{font-family:'Plus Jakarta Sans',sans-serif;background-color:#f8fafc;}
@@ -102,13 +102,21 @@
 
 <!-- ===== NAVBAR ===== -->
 <nav class="bg-slate-900 text-white px-3 py-2.5 shrink-0 flex justify-between items-center shadow-lg z-30 border-b border-orange-600/40">
-  <div class="flex items-center gap-2.5 pl-1">
-    <div class="w-8 h-8 rounded-lg bg-orange-600 flex items-center justify-center"><i class="fa-solid fa-smog"></i></div>
-    <div>
-      <h1 class="font-bold text-sm tracking-wide leading-none">HAZEGUARD EWS</h1>
-      <p class="text-[10px] text-slate-400 mt-0.5">Wildfire Smoke &amp; ARI Risk</p>
-    </div>
+
+<div class="flex items-center gap-2.5 pl-1">
+  <div class="w-8 h-8 rounded-lg overflow-hidden bg-slate-800 border border-white/10 shadow-sm shrink-0">
+    <img src="icon-192.png"
+         alt="HazeGuard"
+         class="w-full h-full object-cover">
   </div>
+
+  <div>
+    <h1 class="font-bold text-sm tracking-wide leading-none">HAZEGUARD EWS</h1>
+    <p class="text-[10px] text-slate-400 mt-0.5">
+      Wildfire Smoke &amp; ARI Risk
+    </p>
+  </div>
+</div>
 
   <div class="flex gap-2 items-center">
     <!-- LANGUAGE -->
