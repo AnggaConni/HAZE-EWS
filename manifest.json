@@ -17,7 +17,7 @@
     },
     {
       "src": "./screenshot-desktop.png",
-      "sizes": "1920x1080",
+      "sizes": "3842x2161",
       "type": "image/png",
       "form_factor": "wide",
       "label": "HazeGuard Analytics & Spatial View"
